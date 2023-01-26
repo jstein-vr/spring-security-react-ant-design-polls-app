@@ -21,6 +21,7 @@ spec:
       labels:                 # Labels that will be applied to each Pod in this deployment
         app: polling-app-server
     spec:                     # Spec for the containers that will be run in the Pods
+    serviceAccountName: polling-app-server
       containers:
       - name: polling-app-server
         image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-backend:a01fcb8amd64
