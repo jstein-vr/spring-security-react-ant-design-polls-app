@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: polling-app-server
-  namespace: default
+  namespace: api
 ---
 apiVersion: apps/v1           # API version
 kind: Deployment              # Type of kubernetes resource
