@@ -31,8 +31,8 @@ spec:
           value: RedisStackDatabaseSecretD6D-SZZXmc8H7RCl
         - name: SPRING_DATASOURCE_DRIVER-CLASS-NAME
           value: com.amazonaws.secretsmanager.sql.AWSSecretsManagerMySQLDriver
-        - name: SPRING_DATASOURCE_URL
-          value: redisstack-databaseb269d8bb-rilbreguidlv.cluster-cetdtvws2z9p.us-east-2.rds.amazonaws.com
+            #- name: SPRING_DATASOURCE_URL
+            #  value: redisstack-databaseb269d8bb-rilbreguidlv.cluster-cetdtvws2z9p.us-east-2.rds.amazonaws.com
 ---
 apiVersion: v1                # API version
 kind: Service                 # Type of the kubernetes resource
