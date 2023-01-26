@@ -17,7 +17,8 @@ spec:
     spec:                     # Spec for the containers that will be run in the Pods
       containers:
       - name: polling-app-server
-        image: callicoder/polling-app-server:1.0.0
+        image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-backend:a01fcb8amd64
+        #image: callicoder/polling-app-server:1.0.0
         imagePullPolicy: IfNotPresent
         ports:
           - name: http
