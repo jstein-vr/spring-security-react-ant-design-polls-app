@@ -36,7 +36,7 @@ spec:
             memory: "200Mi"
         env:                  # Environment variables supplied to the Pod
         - name: SPRING_DATASOURCE_URL # Name of the environment variable
-          value: jdbc-secretsmanager:mysql://redisstack-databaseb269d8bb-rilbreguidlv.cluster-cetdtvws2z9p.us-east-2.rds.amazonaws.com:3306/polling
+          value: jdbc-secretsmanager:mysql://redisstack-databaseb269d8bb-s6vb2mvokgqz.cluster-cetdtvws2z9p.us-east-2.rds.amazonaws.com:3306/polling
         - name: SPRING_DATASOURCE_USERNAME # Name of the environment variable
           value: RedisStackDatabaseSecretD6D-SZZXmc8H7RCl
         - name: SPRING_DATASOURCE_DRIVER-CLASS-NAME
