@@ -72,7 +72,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: pollin-api.verticalrelevancelabs.com
+    - host: polling-api.verticalrelevancelabs.com
       http:
         paths:
         - path: /
