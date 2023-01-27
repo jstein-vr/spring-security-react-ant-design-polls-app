@@ -45,7 +45,7 @@ metadata:
   name: polling-app-client
   namespace: public
   annotations:
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:899456967600:certificate/65902134-ab83-44ee-aa12-c32eaf2e6d33
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:899456967600:certificate/877ae8a9-31d3-4cad-8ad3-88b059442a65
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
 spec:
