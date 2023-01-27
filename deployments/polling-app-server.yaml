@@ -31,9 +31,9 @@ spec:
           - name: http
             containerPort: 8080 # The port that the container exposes
         resources:
-          limits:
-            cpu: 0.2
-            memory: "200Mi"
+          #limits:
+          #  cpu: 0.2
+          #  memory: "200Mi"
         env:                  # Environment variables supplied to the Pod
         - name: SPRING_DATASOURCE_URL # Name of the environment variable
           value: jdbc-secretsmanager:mysql://redisstack-databaseb269d8bb-s6vb2mvokgqz.cluster-cetdtvws2z9p.us-east-2.rds.amazonaws.com:3306/polling?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
