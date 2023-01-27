@@ -45,13 +45,13 @@ metadata:
   name: polling-app-client
   namespace: public
   annotations:
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:899456967600:certificate/e355d30c-7dcf-4965-8f23-ca3f6b491641
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:899456967600:certificate/65902134-ab83-44ee-aa12-c32eaf2e6d33
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
 spec:
   ingressClassName: alb
   rules:
-    - host: yourdomain.com
+    - host: polling.verticalrelevancelabs.com
       http:
         paths:
         - path: /

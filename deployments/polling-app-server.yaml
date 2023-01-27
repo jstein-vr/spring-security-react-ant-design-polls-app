@@ -59,3 +59,26 @@ spec:
   - name: http
     port: 8080
     targetPort: 8080
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: polling-app-server
+  namespace: api
+  annotations:
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:899456967600:certificate/65902134-ab83-44ee-aa12-c32eaf2e6d33
+    alb.ingress.kubernetes.io/scheme: internal
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  ingressClassName: alb
+  rules:
+    - host: pollin-api.verticalrelevancelabs.com
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: polling-app-server
+              port:
+                number: 80
