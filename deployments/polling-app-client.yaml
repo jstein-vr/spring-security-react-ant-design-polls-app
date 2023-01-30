@@ -19,14 +19,14 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
           - name: REACT_APP_API_BASE_URL
-            value: 172.20.166.185:8080
+            value: polling-api.verticalrelevancelabs.com
         ports:
           - name: http
             containerPort: 80   # Should match the Port that the container listens on
-        resources:
-          limits:
-            cpu: 0.2
-            memory: "10Mi"
+              #jkresources:
+              #jk  limits:
+              #jk    cpu: 0.2
+              #jk    memory: "10Mi"
 ---
 apiVersion: v1                  # API version
 kind: Service                   # Type of kubernetes resource
