@@ -35,7 +35,7 @@ spec:
       serviceAccountName: polling-app-server
       containers:
       - name: polling-app-server
-        image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-backend:a01fcb8amd64
+        image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-backend:621b202amd64
         #image: callicoder/polling-app-server:1.0.0
         imagePullPolicy: IfNotPresent
         ports:
