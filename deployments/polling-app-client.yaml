@@ -19,7 +19,7 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
           - name: REACT_APP_API_BASE_URL
-            value: polling-api.verticalrelevancelabs.com
+            value: https://polling-api.verticalrelevancelabs.com
         ports:
           - name: http
             containerPort: 80   # Should match the Port that the container listens on
