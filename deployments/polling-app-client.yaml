@@ -15,7 +15,7 @@ spec:
     spec:                       # Spec for the containers that will run inside the Pods
       containers:
       - name: polling-app-client
-        image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-frontend:80c4446amd64
+        image: 899456967600.dkr.ecr.us-east-2.amazonaws.com/spring-frontend:8c665c2amd64
         imagePullPolicy: IfNotPresent
         env:
           - name: REACT_APP_API_BASE_URL
